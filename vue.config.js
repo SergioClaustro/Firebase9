@@ -1,6 +1,8 @@
 module.exports = {
   devServer: {
-    public: '0.0.0.0:10000',
-    allowedHosts: "all",  // Permite todos los hosts
+    host: '0.0.0.0',
+    // public: 'your-app.onrender.com',  // Comenta o elimina esta línea
+    disableHostCheck: true,  // (Solo para desarrollo, evita esto en producción)
+    port: 10000,
   }
 }
